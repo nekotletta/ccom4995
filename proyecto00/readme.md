@@ -2,7 +2,7 @@ Proyecto00 - Creacion deuna casa en unity
 
 Este proyecto tiene como proposito crear una casa en Unity usando solamente cubos.
 
-![cubo](/img/cubo.png)
+![cubo](./img/cubo.png)
 
 I. Paredes
 Comenzamos creando paredes para nuestra casa. 
