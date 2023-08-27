@@ -1,4 +1,4 @@
-Proyecto00 - Creación deuna casa en unity
+Proyecto00 - Creación de una casa en Unity
 
 Este proyecto tiene como propósito crear una casa en Unity usando solamente cubos.
 
@@ -54,4 +54,4 @@ V. Resultado final
 Este sería lo obtenido tras pasar por el post-procesado.
 
 VI. Conclusión
-Mediante la realización de este proyecto hemos aprendido fundamentos escenciales de la aplicación Unity, al igual que las acciones básicas de movimiento de los objetos y de la cámara; De la misma manera, pudimos llegar un poco más lejos al momento de añadir las texturas y trabajar con la iluminación y cómo estás interactúan de manera superficial con los objetos. Algo interesante que pudimos observar en la elaboración del proyecto fue el cómo con herramientas tan básicas se es capaz de realizar entornos digitales los cuales hubiesen tomado mucho trabajo años atrás, así mismo la posibilidad de crear entornos muy realistas de manera relativamente sencilla con pocas herramientas y recursos.
+Mediante la realización de este proyecto hemos aprendido fundamentos escenciales de la aplicación Unity, al igual que las acciones básicas de movimiento de los objetos y de la cámara; de la misma manera, pudimos llegar un poco más lejos al momento de añadir las texturas y trabajar con la iluminación y cómo estás interactúan de manera superficial con los objetos. Algo interesante que pudimos observar en la elaboración del proyecto fue el cómo con herramientas tan básicas, se es capaz de realizar entornos digitales los cuales hubiesen tomado mucho trabajo años atrás, así mismo la posibilidad de crear entornos muy realistas de manera relativamente sencilla con pocas herramientas y recursos.
