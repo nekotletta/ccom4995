@@ -40,18 +40,19 @@ a) Una papa - Se colocó una papa utilizando el objeto de capsula en unity para 
 
 b) Texturas - Para que no se viera todo de un mismo color sólido decidimos explorar y tratar de colocarle texturas a todo lo que había sido creado, tomando por referencia el dueño de la casa, que es una papa, se decidió que la casa tuviera una textura de tierra inspirada en el juego "Minecraft".
 
-![bloque](./img/bloque-textura.png)
-
 b.1) Texturas - Las texturas fueron creadas a partir de la imagen original de la textura de tierra de "Minecraft", pasada por la herramienta llamada "Materialize" la cual cumple la función de crear el relieve, las sombras y los diferentes contrastes dependiendo de la luz que le esté dando.
 
-![ventana](./img/ventana.png)
+![bloque](./img/bloque-textura.png)
 
 c) Ventana - Usando más cubos logramos crear una abertura en la pared frontal de la casa para hacer la representación de una ventana.
 
-![showcase](./img/textura-showcase.png)
+![ventana](./img/ventana.png)
 
 V. Resultado final
 Este sería lo obtenido tras pasar por el post-procesado.
+
+![showcase](./img/textura-showcase.png)
+
 
 VI. Conclusión
 Mediante la realización de este proyecto hemos aprendido fundamentos escenciales de la aplicación Unity, al igual que las acciones básicas de movimiento de los objetos y de la cámara; de la misma manera, pudimos llegar un poco más lejos al momento de añadir las texturas y trabajar con la iluminación y cómo estás interactúan de manera superficial con los objetos. Algo interesante que pudimos observar en la elaboración del proyecto fue el cómo con herramientas tan básicas, se es capaz de realizar entornos digitales los cuales hubiesen tomado mucho trabajo años atrás, así mismo la posibilidad de crear entornos muy realistas de manera relativamente sencilla con pocas herramientas y recursos.
