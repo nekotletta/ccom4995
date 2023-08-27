@@ -47,4 +47,4 @@ seba explica esto
 
 c) Ventana - Usando mas cubos le colocamos una ventana a la casa
 
-![ventana](/img/ventana.png)
+![ventana](./img/ventana.png)
