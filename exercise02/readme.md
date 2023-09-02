@@ -36,7 +36,7 @@ Luego de completar las extremidades se le annadieron los accesorios.
 El sombrero fue creado utilizando dos capsulas (la base del sombrero y la "cola" (darle longitud)) y 
 una esfera para la bolita al final.
 
-![kirby-sombrero](./img/kirby-sombrero)
+![kirby-sombrero](./img/kirby-sombrero.png)
 
 La espada fue creada con cuatro cubos. Dos fueron utilizados para crear el mango de la espada, 
 uno para crear la hoja de la espada y el ultimo para crear el filo. 
