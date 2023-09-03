@@ -66,7 +66,7 @@ b) Variante Kirby Pintor (Artist)
 Se inicio de la misma manera en que se inicio el primer variante de Kirby y se tomaron en consideracion
 las mismas cosas descritas en el variante de Link.
 
-![kirby2-cuerpo](./img/kirby-cuerpo.png)
+![kirby2-cuerpo](./img/kirby2-cuerpo.png)
 
 Luego de completar a Kirby se le anadieron accesorios de acuerdo a su habilidad.
 
