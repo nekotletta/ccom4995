@@ -1,4 +1,4 @@
-### Ejercicio 02 - Creacion de prefabs, variantes y terrenos
+# Ejercicio 02 - Creacion de prefabs, variantes y terrenos
 
 Este proyecto consiste en
  
@@ -22,7 +22,7 @@ establecida, arrastramos el modelo hacia la seccion de "Assets" para convertirlo
 ## a.ii)  Creacion de las variantes de Kirby
 
 
-# I.  Variante Kirby Link (Sword)
+### I.  Variante Kirby Link (Sword)
 
 
 ![kirby-link](./img/kirby-link.png)
@@ -56,7 +56,7 @@ Como toque final se le anadio color al modelo
 
 ![kirby-final](./img/kirby-final.png)
 
-# II. Variante Kirby Pintor (Artist)
+### II. Variante Kirby Pintor (Artist)
 
 
 ![kirby-pintor](./img/kirby-artist.png)
@@ -90,9 +90,9 @@ Resultado final del modelo:
 ![kirby2-showcase](./img/kirby2-showcase.png)
 
 
-# III.  Variante Kirby 3
+### III.  Variante Kirby 3
 
-# IV.  Variante Kirby 4
+### IV.  Variante Kirby 4
 
 
 
