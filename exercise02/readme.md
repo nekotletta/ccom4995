@@ -1,4 +1,4 @@
-Ejercicio 02 - Creacion de prefabs, variantes y terrenos
+### Ejercicio 02 - Creacion de prefabs, variantes y terrenos
 
 Este proyecto consiste en
  
@@ -8,9 +8,7 @@ a) Creacion de un prefab junto a cuatro variantes del personaje Kirby unicamente
 b) Representar una configuracion geologica usando el objeto terreno en Unity
 
 
-a)
-
-I - Creacion del prefab de Kirby
+## a) - Creacion del prefab de Kirby
 
 
 Se utilizo una esfera para crear el cuerpo de Kirby y dos capsulas para crear los ojos. Todos los
@@ -21,10 +19,10 @@ establecida, arrastramos el modelo hacia la seccion de "Assets" para convertirlo
 ![prefab-kirby](./img/kirby-prefab.png)
 
 
-II - Creacion de las variantes de Kirby
+## a.ii)  Creacion de las variantes de Kirby
 
 
-a) Variante Kirby Link (Sword)
+# I.  Variante Kirby Link (Sword)
 
 
 ![kirby-link](./img/kirby-link.png)
@@ -58,7 +56,7 @@ Como toque final se le anadio color al modelo
 
 ![kirby-final](./img/kirby-final.png)
 
-b) Variante Kirby Pintor (Artist)
+# II. Variante Kirby Pintor (Artist)
 
 
 ![kirby-pintor](./img/kirby-artist.png)
@@ -92,13 +90,13 @@ Resultado final del modelo:
 ![kirby2-showcase](./img/kirby2-showcase.png)
 
 
-c) Variante Kirby 3
+# III.  Variante Kirby 3
 
-d) Variante Kirby 4
+# IV.  Variante Kirby 4
 
 
 
-III. Region geologica
+## b)  Region geologica
 
-IV. Conclusion
+##  Conclusion
 
