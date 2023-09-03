@@ -61,7 +61,7 @@ Como toque final se le anadio color al modelo
 b) Variante Kirby Pintor (Artist)
 
 
-![kirby-pintor](./img/kirby-pintor.png)
+![kirby-pintor](./img/kirby-artist.png)
 
 Se inicio de la misma manera en que se inicio el primer variante de Kirby y se tomaron en consideracion
 las mismas cosas descritas en el variante de Link.
@@ -89,7 +89,7 @@ un valor de 0.5 al eje de Z.
 
 Resultado final del modelo:
 
-![kirby2-showcase](.img/kirby2-showcase.png)
+![kirby2-showcase](./img/kirby2-showcase.png)
 
 
 c) Variante Kirby 3
