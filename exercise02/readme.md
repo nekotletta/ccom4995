@@ -120,7 +120,7 @@ Resultado final del modelo:
 
 #### Showcase de todas las variantes
 
-![variantes-kirby](./img/coleccion-kirby.png)
+![variantes-kirby](./img/coleccion-kirbys.png)
 
 
 ## b)  Region geologica
@@ -138,7 +138,7 @@ La editamos para que fuera aun mas parecida y terminamos con este terreno:
 
 De frente para que sea mas apreciado
 
-![terreno](./img/terreno-png)
+![terreno](./img/terreno.png)
 
 Luego simplemente colocamos los Kirbys en el terreno
 
