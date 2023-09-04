@@ -29,7 +29,7 @@ establecida, arrastramos el modelo hacia la seccion de "Assets" para convertirlo
 
 
 Lo primero que se hizo fue posicionar las extremidades lo mas cercano a como se puede ver en la imagen.
-Para los brazos se usaron esferas. Para las piernas se usaron capsulas.
+Para las manos  se usaron esferas. Para los pies se usaron capsulas.
 
 ![kirby-cuerpo](./img/kirby-cuerpo.png)
 ![kirby-showcase](./img/kirby-showcase.png)
@@ -90,13 +90,62 @@ Resultado final del modelo:
 ![kirby2-showcase](./img/kirby2-showcase.png)
 
 
-### III.  Variante Kirby 3
+### III.  Variante Kirby Cocinero (Cook)
 
-### IV.  Variante Kirby 4
+![kirby-cocinero](./img/kirby-cook.png)
 
+Para la creacion de los ojos y la boca de este Kirby se usaron esferas y capsulas casi planas. Para las
+extremidades se usaron capsulas.
+
+![kirby-cuerpo](./img/kirby3-cuerpo.png)
+
+Luego se le annadieron los accesorios.
+
+El sombrero fue creado con un cilindro junto repeticion de esferas en el tope de este. 
+
+![kirby-sombrero](./img/kirby3-sombrero.png)
+
+El sarten fue creado con dos cubos (uno alargado para el mango, y otro rotado 45 grados para el boorde(?) de este)
+junto a una capsula(?) para crear el sarten como tal (no se como se llama)
+
+![kirby-sarten](./img/kirby3-sarten.png)
+
+Resultado final del modelo:
+
+![kirby3-showcase](./img/kirby3-showcase.png)
+
+
+### IV.  Variante Kirby Durmiendo (Sleep)
+
+
+#### Showcase de todas las variantes
+
+![variantes-kirby](./img/coleccion-kirby.png)
 
 
 ## b)  Region geologica
 
-##  Conclusion
+img especfica que se uso del area porfa
+
+Seleccionamos el area geologica de Corozal para hacer el terreno. La manera en la que lo hicimos fue tomando una captura de
+pantalla al area seleccionada y dandosela a Unity para que creara una renderizacion lo mas parecido posible.
+
+seba explica que hiciste porfa 
+
+La editamos para que fuera aun mas parecida y terminamos con este terreno:
+
+![terreno-top](./img/terreno-top.png)
+
+De frente para que sea mas apreciado
+
+![terreno](./img/terreno-png)
+
+Luego simplemente colocamos los Kirbys en el terreno
+
+![kirby-terreno](./img/kirby-terreno.png) 
+
+## c) Experiencias con Kirby
+
+Adriana N Hernandez Vega - Nunca he jugado un juego de Kirby, pero si he jugado con el personaje de Kirby en el
+juego Super Smash Bros. Siempre trato de copiar las habilidades de los otros jugadores y usarlas a mi favor.
 
