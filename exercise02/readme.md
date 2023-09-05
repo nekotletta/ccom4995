@@ -168,5 +168,5 @@ Luego simplemente colocamos los Kirbys en el terreno
 Adriana N Hernandez Vega - Nunca he jugado un juego de Kirby, pero si he jugado con el personaje de Kirby en el
 juego Super Smash Bros. Siempre trato de copiar las habilidades de los otros jugadores y usarlas a mi favor.
 
-Berbardo A. Bermúdez Noriega - Durante la pandemia, jugue Kirby Planet Robot por primera vez. Ademas de poder absorber las abilidades de los enemigos, siendo interesado en ficción mecha, me fascinó que podía transformarme en un robot con sus probias abilidades.
+Bernardo A. Bermúdez Noriega - Durante la pandemia, jugue Kirby Planet Robot por primera vez. Ademas de poder absorber las abilidades de los enemigos, siendo interesado en ficción mecha, me fascinó que podía transformarme en un robot con sus probias abilidades.
 
