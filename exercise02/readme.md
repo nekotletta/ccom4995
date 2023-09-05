@@ -117,6 +117,25 @@ Resultado final del modelo:
 
 ### IV.  Variante Kirby Durmiendo (Sleep)
 
+Comenzamos creando una esfera y moldearlo a una figura mas parecida a un ovalo, esto disimulara el cuerpo relajado de Kirby cuando duerme
+
+<photo 1>
+
+Añademos una cara de dormilón, mediante dos capsulas inclinadas como los ojos y un circulo abajo en el medio como la boca.
+
+<photo 2>
+
+Dos capsulas paralelas inclinadas y insertadas en la esfera para generar la poscición recostada del modelo. Igual que, en la parte de atrás, colocamos dos esferas aplstadas paralelas en la como los pies de kirby.
+
+<photo 3>
+
+Colocamos 3 esferas, comenzando desde cerca de la boca de kirby, hacia el cielo aumentando el tamaño ascendentemente. Esto disimula como si estuviera soñando como en las caricaturas.
+
+<photo 4>
+
+Finalmente colocamos un gorro, el cual esta compuesto en un cilindro, una esfera y otra esfera pequeña encima como una gorra de dormir.
+
+<photo 5>
 
 #### Showcase de todas las variantes
 
@@ -148,4 +167,6 @@ Luego simplemente colocamos los Kirbys en el terreno
 
 Adriana N Hernandez Vega - Nunca he jugado un juego de Kirby, pero si he jugado con el personaje de Kirby en el
 juego Super Smash Bros. Siempre trato de copiar las habilidades de los otros jugadores y usarlas a mi favor.
+
+Berbardo A. Bermúdez Noriega - Durante la pandemia, jugue Kirby Planet Robot por primera vez. Ademas de poder absorber las abilidades de los enemigos, siendo interesado en ficción mecha, me fascinó que podía transformarme en un robot con sus probias abilidades.
 
