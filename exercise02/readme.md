@@ -117,25 +117,31 @@ Resultado final del modelo:
 
 ### IV.  Variante Kirby Durmiendo (Sleep)
 
+![kirby4-sleep](./img/kirby-sleep.png)
+
 Comenzamos creando una esfera y moldearlo a una figura mas parecida a un ovalo, esto disimulara el cuerpo relajado de Kirby cuando duerme
 
-<photo 1>
+![kirby-base](./img/kirby4-base.png)
 
 Añademos una cara de dormilón, mediante dos capsulas inclinadas como los ojos y un circulo abajo en el medio como la boca.
 
-<photo 2>
+![kirby-cara](./img/kirby4-cara.png)
 
 Dos capsulas paralelas inclinadas y insertadas en la esfera para generar la poscición recostada del modelo. Igual que, en la parte de atrás, colocamos dos esferas aplstadas paralelas en la como los pies de kirby.
 
-<photo 3>
+![kirby-cuerpo](./img/kirby4-cuerpo.png)
 
 Colocamos 3 esferas, comenzando desde cerca de la boca de kirby, hacia el cielo aumentando el tamaño ascendentemente. Esto disimula como si estuviera soñando como en las caricaturas.
 
-<photo 4>
+![kirby-burbujas](./img/kirby4-burbujas.png)
 
 Finalmente colocamos un gorro, el cual esta compuesto en un cilindro, una esfera y otra esfera pequeña encima como una gorra de dormir.
 
-<photo 5>
+![kirby-sombrero](./img/kirby4-sombrero.png)
+
+Resultado final del modelo:
+
+![kirby-final](./img/kirby4-final.png)
 
 #### Showcase de todas las variantes
 
