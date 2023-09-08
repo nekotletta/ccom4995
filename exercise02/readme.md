@@ -155,11 +155,11 @@ pantalla al area seleccionada y dandosela a Unity para que creara una renderizac
 
 Se empieza creando un terreno normal y se le da las dimensiones deseadas
 
-![terreno-base](./img/terreno-base.png)
+![terreno-base](./img/terreno-base.jpeg)
 
 Luego con "Terrain tool" añadimos la imagen de ruido (es decir, la imagen tomada directamente del mapa de P.R.) y ajustamos los parámetros de altura.
 
-![terreno-config](./img/terreno-config.png)
+![terreno-config](./img/terreno-config.jpeg)
 
 Terminamos con el siguiente terreno:
 
