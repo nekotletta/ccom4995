@@ -150,14 +150,18 @@ Resultado final del modelo:
 
 ## b)  Region geologica
 
-img especfica que se uso del area porfa
-
 Seleccionamos el area geologica de Corozal para hacer el terreno. La manera en la que lo hicimos fue tomando una captura de
 pantalla al area seleccionada y dandosela a Unity para que creara una renderizacion lo mas parecido posible.
 
-seba explica que hiciste porfa 
+Se empieza creando un terreno normal y se le da las dimensiones deseadas
 
-La editamos para que fuera aun mas parecida y terminamos con este terreno:
+![terreno-base](./img/terreno-base.png)
+
+Luego con "Terrain tool" añadimos la imagen de ruido (es decir, la imagen tomada directamente del mapa de P.R.) y ajustamos los parámetros de altura.
+
+![terreno-config](./img/terreno-config.png)
+
+Terminamos con el siguiente terreno:
 
 ![terreno-top](./img/terreno-top.png)
 
@@ -176,3 +180,4 @@ juego Super Smash Bros. Siempre trato de copiar las habilidades de los otros jug
 
 Bernardo A. Bermúdez Noriega - Durante la pandemia, jugue Kirby Planet Robot por primera vez. Ademas de poder absorber las abilidades de los enemigos, siendo interesado en ficción mecha, me fascinó que podía transformarme en un robot con sus probias abilidades.
 
+Sebastian Hernandez Sterling - Mi primera experiencia con Kirby fue en octavo grado a través de un emulador de Game Boy Advanced en mi primer celular, donde pude jugar los juegos en los que había visto jugar a mis compañeros varios años atrás, incluyendo el juego de Kirby and the Amazing Mirror donde resalta por tener un teléfono en el cual llama a sus amigos para que lo ayuden en su aventura.
