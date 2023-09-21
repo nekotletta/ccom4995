@@ -40,7 +40,7 @@ Se empieza creando un terreno normal y se le da las dimensiones deseadas. Se pin
 
 Añadimos los "Layers" con las texturas que vayamos a usar para pintar los detalles. En este caso se les dio un tono azulado para dar la ilusión de un clima más frío.
 
-![layers-terreno](.img/layers-terreno.jpeg)
+![layers-terreno](./img/layers-terreno.jpeg)
 
 Seleccionamos la herramienta de "Raise or Lower terrain" para darle el relieve.
 
