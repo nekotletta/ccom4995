@@ -1,37 +1,37 @@
-# Ejercicio 3 - Viva Mexico
+# Ejercicio 3 - Viva México
 
 Este proyecto consiste en:
 
-a) Crear una piramide representando el Templo Mayor
-b) Crear un terreno para la piramide
+a) Crear una pirámide representando el Templo Mayor
+b) Crear un terreno para la pirámide
 c) Importat assets de Asset Store para anadirlos a la escena
 d) Crear una historia en base a las secciones previamente mencionadas
 
-## a) Creacion de la piramide
+## a) Creación de la pirámide
 
-Se utilizo la herramienta ProBuilder para la creacion de este. ProBuilder es una herramienta que requiere ser descargada antes.
+Se utilizó la herramienta ProBuilder para la creación de este. ProBuilder es una herramienta que requiere ser descargada antes.
 
-La base fue creada utilizando un cubo en probuilder. Luego se aplico una seleccion de aristas. El proposito de esto fue empujar las aristas de la cara superior del cubo hacia adentro para hacer que la parte superior de este fuera mas pequena. Esto nos da un trapecio como base.
+La base fue creada utilizando un cubo en probuilder. Luego se aplicó una selección de aristas. El propósito de esto fue empujar las aristas de la cara superior del cubo hacia adentro para hacer que la parte superior de este fuera mas pequeña. Esto nos da un trapecio como base.
 
 ![base-pir](./img/base-pir.png)
 
-La piramide tiene otras tres capas. Para lograr estas duplicamos la base y le reducimos las dimensiones (en x y z)  en una escala de 0.25.
+La pirámide tiene otras tres capas. Para lograr estas, duplicamos la base y le reducimos las dimensiones (en x y z)  en una escala de 0.25.
 
 ![bloques-pir](./img/bloques-pir.png)
 
-Para la creacion de las escaleras se uso un cubo simple. Se le dio algo de anchura para luego crear otro cubo mas finito y colocarselo en el medio. Esto es para representar que hay dos escaleras(?).
+Para la creación de las escaleras se uso un cubo simple. Se le dio algo de anchura para luego crear otro cubo más finito y colocarselo en el medio. Esto es para representar que hay dos escaleras(?).
 
 ![escaleras](./img/escaleras-pir.png)
 
-Para la creacion del tope de la piramide se utilizo otro cubo probuilder.Se hizo lo mismo que se hizo para los bloques de la piramide, solo que mas notable. Es mas ancho y hay una mayor diferencia entre la cara de abajo y la de arriba.
+Para la creación del tope de la pirámide se utilizo otro cubo probuilder.Se hizo lo mismo que se hizo para los bloques de la pirámide, solo que más notable. Es mas ancho y hay una mayor diferencia entre la cara de abajo y la de arriba.
 
 ![tope-pir](./img/tope-pir.png)
 
-Ya al final se decidio colocar una textura de bloques/ladrillos arenosos para simular la antiguedad de la piramide (de acuerdo con lo visto en google). Para las escalaeras se utilizo una textura con muchas lineas arenosas para simular escalones.
+Ya al final se decidió colocar una textura de bloques/ladrillos arenosos para simular la antiguedad de la piramide (de acuerdo con lo visto en google). Para las escalaeras se utilizo una textura con muchas lineas arenosas para simular escalones.
 
 ![piramide](./img/piramide.png)
 
-## b) Creacion del terreno para la piramide
+## b) Creación del terreno para la pirámide
 
 
 Se empieza creando un terreno normal y se le da las dimensiones deseadas. Se pinta con la textura deseada para la base.
