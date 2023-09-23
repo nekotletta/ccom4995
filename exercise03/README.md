@@ -55,8 +55,11 @@ Pintamos el terreno y añadimos detalles.
 
 1. Combinamos el modelo de la pirámide y el terreno en una escena.
 
+![escenario](./img/escenario.jpeg)
 
 2. Luego añadimos árboles tropicales alrededor de la pirámide y otros tipos de arboles alrededor del área para crear inmersión.
+
+![arboles](./img/arboles.jpeg)
 
 3. Nombre de los Assets:
 
@@ -71,6 +74,7 @@ Pintamos el terreno y añadimos detalles.
 	Furro:
 		Nombre: Dog Knight PBR Polyart
 		Creador: Dungeon Mason
+![assets](./img/assets.jpeg)
 
 ## D) Creación de la historia 
 
@@ -78,11 +82,14 @@ Historia: La Leyenda Perruna
 
 En un mundo lleno de misterio y maravillas, Furro se embarcó en una búsqueda épica en busca de su próxima gran aventura. Sus pasos lo llevaron hacia una tierra mística, envuelta en leyendas y secretos que solo podían ser imaginados por su tribu. Con cada paso, se internaba más en lo desconocido.
 
+![furro](./img/furro.jpeg)
 
 Mientras exploraba este nuevo mundo, el destino lo condujo hacia la majestuosa pirámide del Sagrado, un lugar que las leyendas mencionaban con reverencia. Pero algo era diferente esta vez. En lugar de encontrar la tribu ancestral que se había criado allí, se encontró con criaturas invasivas que infestaban el lugar sagrado.
 
+![enemigos](./img/enemigos.jpeg)
 
 Furro conectó los puntos y su mente se llenó de preguntas. ¿Qué había sucedido con la tribu que una vez habitó la pirámide? ¿Cómo es que estas criaturas habían atemorizado y expulsado a sus antiguos habitantes? Un fuego ardiente se encendió en el corazón valiente de Furro, y supo que era su destino enfrentar a estas criaturas invasivas y devolver la paz a la tierra sagrada.
 
 Con determinación inquebrantable, Mr. Furro ascendió hasta la cumbre de la pirámide, preparado para el desafío que lo esperaba. La vista era impresionante: un horizonte lleno de criaturas que amenazaban con sumir en la oscuridad el legado de la tribu ancestral. Pero nuestro valiente héroe no retrocedió. Con cada paso, su espíritu se fortalecía y su coraje se volvía incandescente.
 
+![cliff-hanger](./img/cliff-hanger.jpeg)
