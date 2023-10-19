@@ -7,14 +7,14 @@ public class scrip : MonoBehaviour
 {
     public float speed;
     public float speedRotation;
-    public float jumpSpeed;
     public GameObject prefab;
     public GameObject bulletPoint;
-    public KeyCode actionKey;
     public KeyCode SupportKey;
-    public float actionTime = 5f;
-    private bool isActionActive = false;
-    private float timer = 0f;
+    public float jumpSpeed = 5;
+    public float groundDistance = 0.5f;
+    public KeyCode jumpKey; 
+    Rigidbody rigidBody;
+    bool doublejump;
 
     // Start is called before the first frame update
 
@@ -22,37 +22,25 @@ public class scrip : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        rigidBody = GetComponent<Rigidbody>();
     }
     
     void Update()
     {
-        //activar botón para brincar
-        if (Input.GetKeyDown(actionKey))
+        //Jumping
+        if (Input.GetKeyDown(jumpKey))
         {
-            // Iniciar la acción
-            isActionActive = true;
-            timer = 0f;
-        }
-        if (isActionActive)
-        {
-            // Realizar la acción durante el tiempo especificado
-            timer += Time.deltaTime;
-            if (timer >= actionTime/5)
-            {
-                // Finalizar la acción
-                isActionActive = false;
-                timer = 0f;
-                Debug.Log("Acción completada");
+            if(Physics.Raycast(transform.position, Vector3.down, groundDistance)){
+                rigidBody.velocity = Vector3.up * jumpSpeed;
+                doublejump = true;
             }
-            else
-            {
-                // Realizar la acción mientras el tiempo no se haya cumplido
-                // Aquí puedes colocar el código de la acción que deseas ejecutar
-                // durante el tiempo especificado
-                transform.Translate(0,jumpSpeed,0);
-                Debug.Log("Realizando acción...");
+            //Activate DoubleJump
+            else if(doublejump){
+                rigidBody.velocity = Vector3.up * jumpSpeed;
+                doublejump = false; //Avoids jumping twice
             }
         }
+        
         //Foward Movement
         if(Input.GetKey(KeyCode.W)){
             //When running
