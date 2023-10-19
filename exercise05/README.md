@@ -34,61 +34,7 @@ FastMov - Poder desplazar el personaje mas rapido si estamos presionando la tecl
 
 ## c) Showcase de mapping 
 
-### Showcase Move 
+# todo este showcase esta en este documento porque los gifs eran muy grandes para github. no me dejo subirlo aqui 
 
-[!image](./img/walk_run.gif)
+https://docs.google.com/document/d/1zLMbWXC36ufQRfmyaDd6BXMOgvftcOiwSK_PFWAzFW4/edit
 
-Visual graph para Move
-
-[!image](./img/move_graph.gif)
-
-
-### Showcase Fire
-
-[!image](./img/shoot.gif)
-
-Visual graph para Fire
-
-[!image](./img/fire_graph.gif)
-
-
-### Showcase Look
-
-[!image](./img/cursor.gif)
-
-Visual graph para Look
-
-[!image](./img/look_graph.gif)
-
-### Showcase Jump
-
-[!image](./img/doubleJump.gif)
-
-Visual graph para Jump
-
-[!image](./img/jump_graph.gif)
-
-
-## d) Notas de las graficas
-
-Move graph
-
-[!image](./img/move1.png)
-
-[!image](.img/move2.png)
-
-Fire graph
-
-[!image](./img/fire.png)
-
-Look graph
-
-[!image](./img/look.png)
-
-Jump graph
-
-[!image](./img/bribcar1.png)
-
-[!image](./img/bribcar2.png)
-
-[!image](./img/bribcar3.png)
