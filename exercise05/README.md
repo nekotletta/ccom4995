@@ -32,6 +32,9 @@ Jump - Hacer el personaje salte
 
 FastMov - Poder desplazar el personaje mas rapido si estamos presionando la tecla W junto a la tecla shift
 
+![image](https://github.com/nekotletta/ccom4995/assets/99048617/d476bb24-383d-4aba-9fa9-6d8259abb910)
+
+
 ## c) Showcase de mapping 
 
 # todo este showcase esta en este documento porque los gifs eran muy grandes para github. no me dejo subirlo aqui 
