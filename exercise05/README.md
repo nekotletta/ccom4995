@@ -8,9 +8,9 @@ El input system es un sistema que nos permite mapear teclas a las acciones que q
 
 Para poder utilizar el input system es necesario descargarlo desde Unity Package Manager de la siguiente manera: 
 
-
+```
 Window > Package Manager > Unity Registry > Input System > Download
-
+```
 
 Una vez este se descargue, Unity se va a reiniciar. Ya luego de que se reinicie este podra ser utilizado. 
 
