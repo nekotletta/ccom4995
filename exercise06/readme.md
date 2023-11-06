@@ -3,11 +3,37 @@
 Este ejercicio consiste en crear managers en la forma singleton para manejar diferentes aspectos del juego.
 En esta tarea vamos a manejar los enemigos y el piso.
 
-## a) Enemy Manager
+## Preparacion del terreno
+
+Se crearon los tags para diferenciar los colliders del terreno
+
+![image](https://github.com/nekotletta/ccom4995/assets/99048617/7c49f3b4-1716-4034-8165-95866bcaaa1e)
+
+Se importo el terreno ya hecho en clase, con el cambio que se le coloco una losa en el medio (previamente vacio). 
+Ademas de esto, el fondo fue editado para simular el espacio. 
+
+![image](https://github.com/nekotletta/ccom4995/assets/99048617/7ea841d2-8bf1-494b-a934-e83d1b25c9ec)
+
+Tambien se decidio importar el script del movimiento y el disparo del personaje realizadas para la tarea anterior. 
+
+Ademas de este script, se hizo un script con deteccion de colisiones mas preciso. Esto es para evitar que el jugador se salga del escenario por atravesar las paredes. 
+
+```
+bool IsWallInDirection(Vector3 direction){
+    RaycastHit hit;
+    if (Physics.Raycast(transform.position, direction, out hit, groundDistance)){
+        if (hit.collider.CompareTag("Wall")){
+            return true;
+        } return false;
+}
+```
+
+## Managers
+### a) Enemy Manager
 
 Enemy manager ya habia sido hacho durante el curso de varias clases. Es por esto que el EnemyManager, junto a Enemy simplemente fueron importados del proyecto que llevamos en clase.
 
-## b.1) Floor
+### b.1) Floor
 
 Tendremos un script llamado Floor que vamos a usar para nuestro FloorManager. Lo unico que necesitaos es una funcion que nos indique cual loseta remover de nuestro juego. 
 
@@ -24,7 +50,7 @@ public class Floor : MonoBehaviour
 }
 ```
 
-## b.2) FLoor Manager 
+### b.2) FLoor Manager 
 
 Para hacer el FloorManager, se copio el codigo ya hecho en Enemy y EnemyManager y se edito de acuerdo a lo necesario. 
 
@@ -82,7 +108,7 @@ Luego de asegurarnos de tener un solo manager, el proposito de este va a ser rem
     }
 ```
 
-## c) Remocion de losas
+### c) Remocion de losas
 
 Las losas solo son removidas una vez una bala le pega a una pared. Las paredes funcionan como triggers.
 
@@ -142,7 +168,7 @@ Es necesario seleccionar las opciones de Is Trigger y Freeze Position en Y
 
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/a441e18c-1f24-4986-8f85-6eef4b0ba862)
 
-## d) Lluvia
+## Lluvia
 
 Para la lluvia se creo un prefab con un objeto esfera
 
