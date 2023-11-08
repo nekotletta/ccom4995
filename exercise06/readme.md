@@ -1,4 +1,4 @@
-![image](https://github.com/nekotletta/ccom4995/assets/98557727/4fddd088-ff82-4c6d-8e11-9865afdea3e6)![image](https://github.com/nekotletta/ccom4995/assets/98557727/ceafadcf-0ec7-4144-8941-68becdd25eae)![image](https://github.com/nekotletta/ccom4995/assets/98557727/de31e5f6-5ad0-4b85-95e5-44465df2d568)# Exercise 6 - A Singleton manager to rule them all 
+# Exercise 6 - A Singleton manager to rule them all 
 
 Este ejercicio consiste en crear managers en la forma singleton para manejar diferentes aspectos del juego.
 En esta tarea vamos a manejar los enemigos y el piso.
