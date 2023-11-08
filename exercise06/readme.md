@@ -1,4 +1,4 @@
-# Exercise 6 - A Singleton manager to rule them all 
+![image](https://github.com/nekotletta/ccom4995/assets/98557727/4fddd088-ff82-4c6d-8e11-9865afdea3e6)![image](https://github.com/nekotletta/ccom4995/assets/98557727/ceafadcf-0ec7-4144-8941-68becdd25eae)![image](https://github.com/nekotletta/ccom4995/assets/98557727/de31e5f6-5ad0-4b85-95e5-44465df2d568)# Exercise 6 - A Singleton manager to rule them all 
 
 Este ejercicio consiste en crear managers en la forma singleton para manejar diferentes aspectos del juego.
 En esta tarea vamos a manejar los enemigos y el piso.
@@ -202,3 +202,67 @@ public class Ball : MonoBehaviour
     }
 }
 ```
+
+##Logica de Vida
+La vida es bastante simple, tenemos un valor que representa la cantidad de vida que va a tener el prefab con este script atado y un objeto que deja saber si se invoco un evento de parte. El update mantiene seguimiento el valor de vida, cuando este llegue a 0, el objeto de evento deja saber que se invoco un elemento y se destruye el prefab el cual tenía el script atado (Sea el enemigo o el jugador).
+
+Creamos dos scripst que utilizan "life", uno para quitarle vida a los enemigos y otro para quitarle puntos de vida al jugador.
+Tenemos el script creado en la clase para el enemigo recibir damage, el cual la bala coilisiona con el y le quita una cantidad fija de vida, solo faltaba la del jugador.
+
+Tenemos otro script para la plataforma que va a estar debajo del piso, el cual qualquier cosa que coilisione con ella y tenga atado el script de "life.cs", su valor de vida se reducira a 0. Cuando el jugador se caiga por las lozetas que se van desapareciendo, el jugador se elimina instantaneamente.
+    <DeathPlatform.Gif>
+
+##Coilisiones Implementadas para el juego
+Utilizamos tags para determinar el tipo de objeto con el que este estaba coilisionando el objeto con el script. Los que van a causar cambios pricipales van a ser la gotas de la lluvia igual que la baja del jugador.
+
+La bala contiene un script llamado contacto.cs, el cual basado en el tag del objeto que coilisiono hace se comporta differente mente. Se distribuyen entre 3 tags principales:
+###"Enemy"
+Si es un enemy, la bala se destruye y le quita vida del script Life.cs basado en la variable de damage.
+	<ShootingEnemy.gif>
+ 
+###"Wall"
+Invoca una funcion de floor.cs el cual elimina una lozeta del piso al azar.
+    <TileDestroy.gif>
+    
+###"Corner"
+Destruye el piso completo.
+    <FloorDestroy.gif>
+    
+Si es qualquier otra cosa se destruye la bala sin ningun otro efecto, esto permite que las gotas que caigan en el sielo no destruyan las balas.
+			
+Hablando de, las gotas tendran su propio script de contacto, en el cual reacciona differente basado al tag del game object con el que coalisiona:
+###"Enemy"
+se destruye la gota
+    <GotaEnemy.gif>
+###"ThePlayer" = si hace contacto con el jugador, la gota se destruye y le quita vida del script Life.cs basado en la variable de damage.
+    <GotaPlayer.gif>
+
+
+##Condición Ganar y Perder
+
+1. Creamos un objeto vacío llamado GameMode, en el cual vamos a poner el cript que contiene nuestras condiciones para ganar.
+2. Crea 2 nuevas escenas, una para representar que ganaste y otra que se invoque cuando pierdas, las llamaremos "WinScreen" y "LooseScreen" respectivamente.
+3. Dentro del objeto Gamemode, creamos un script llamado wavesGameMode
+4. Dentro del script creamos una objeto tipo "Life" el cual representara el prefab que estamos controlando.
+5. Estre script mantendra dos funciones que monitorean cada evento que ocurre en el juego, en este caso si matan a un enemigo se       invoca una funcion que chequea si la criteria de ganar se a alcanzado (si eliminas todos los enemigos) y otra funcion si la         vida del objeto Life llega a 0.
+6. En las funciones de ganar y perder vamos a utilizar el manejador de escenas para invocar la respectiva escena basada en si          ganamos o perdimos. En la función de perder invocamos a la escena "LoseScreen" y en la funcion de ganar invocamos la escena         "WinScreen".
+7. Las Escenas son registradas en el build settings para que unity sepa donde buscarlas.
+
+###Condicion de Ganar
+    <Win.gif>
+
+###Condición de Perder
+    <Lose.gif>
+
+El script de WavesGameMode.cs chequea que todos los waves hallan terminado de invocar enemigos igualmente que todos los enemigos hallan sido eliminados para demonstrar la escena de que ganastes. Esto se mantiene en track con en EnemyManager.cs WavesManager.cs los cuales contienen una lista de los respectivos Enemy y Waves que hay en el juego.
+
+
+
+
+
+
+
+
+
+
+
