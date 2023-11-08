@@ -210,32 +210,57 @@ Creamos dos scripst que utilizan "life", uno para quitarle vida a los enemigos y
 Tenemos el script creado en la clase para el enemigo recibir damage, el cual la bala coilisiona con el y le quita una cantidad fija de vida, solo faltaba la del jugador.
 
 Tenemos otro script para la plataforma que va a estar debajo del piso, el cual qualquier cosa que coilisione con ella y tenga atado el script de "life.cs", su valor de vida se reducira a 0. Cuando el jugador se caiga por las lozetas que se van desapareciendo, el jugador se elimina instantaneamente.
-    <DeathPlatform.Gif>
+
+
+![DeathPlatform](https://github.com/nekotletta/ccom4995/assets/99048617/f0c8b169-47e8-4805-8745-56d1a927ea03)
+
 
 ## Coilisiones Implementadas para el juego
+
 Utilizamos tags para determinar el tipo de objeto con el que este estaba coilisionando el objeto con el script. Los que van a causar cambios pricipales van a ser la gotas de la lluvia igual que la baja del jugador.
 
 La bala contiene un script llamado contacto.cs, el cual basado en el tag del objeto que coilisiono hace se comporta differente mente. Se distribuyen entre 3 tags principales:
+
 ### "Enemy"
+
 Si es un enemy, la bala se destruye y le quita vida del script Life.cs basado en la variable de damage.
-	<ShootingEnemy.gif>
+
+
+![ShootingEnemy](https://github.com/nekotletta/ccom4995/assets/99048617/933599ac-43f0-4c8e-8363-ef9674b4cf03)
+
  
 ### "Wall"
+
 Invoca una funcion de floor.cs el cual elimina una lozeta del piso al azar.
-    <TileDestroy.gif>
-    
+
+
+![TileDestroy](https://github.com/nekotletta/ccom4995/assets/99048617/ec989038-fcb9-4330-b2f9-55c8bb6e9a0c)
+
+
 ### "Corner"
+
 Destruye el piso completo.
-    <FloorDestroy.gif>
+
+
+![FloorDestroy](https://github.com/nekotletta/ccom4995/assets/99048617/27849ed1-5afc-45c3-b950-fc3566a63851)
+
     
 Si es qualquier otra cosa se destruye la bala sin ningun otro efecto, esto permite que las gotas que caigan en el sielo no destruyan las balas.
 			
 Hablando de, las gotas tendran su propio script de contacto, en el cual reacciona differente basado al tag del game object con el que coalisiona:
+
 ### "Enemy"
+
 se destruye la gota
-    <GotaEnemy.gif>
+
+
+![GotaEnemy](https://github.com/nekotletta/ccom4995/assets/99048617/cd8f773b-387b-478f-bbec-a6f9302999a4)
+
+
 ### "ThePlayer" = si hace contacto con el jugador, la gota se destruye y le quita vida del script Life.cs basado en la variable de damage.
-    <GotaPlayer.gif>
+
+
+![GotaPlayer](https://github.com/nekotletta/ccom4995/assets/99048617/7de1418e-386b-4df7-a3d2-dd3fb0711a6a)
 
 
 ## Condición Ganar y Perder
@@ -249,17 +274,18 @@ se destruye la gota
 7. Las Escenas son registradas en el build settings para que unity sepa donde buscarlas.
 
 ### Condicion de Ganar
-    <Win.gif>
+
+
+![Win](https://github.com/nekotletta/ccom4995/assets/99048617/fdc55ef5-21e5-4141-9deb-f7bd45f65758)
+
 
 ### Condición de Perder
-    <Lose.gif>
+
+
+![Lose](https://github.com/nekotletta/ccom4995/assets/99048617/ccc9fcf5-c801-4bfe-ba39-444c76c873ab)
+
 
 El script de WavesGameMode.cs chequea que todos los waves hallan terminado de invocar enemigos igualmente que todos los enemigos hallan sido eliminados para demonstrar la escena de que ganastes. Esto se mantiene en track con en EnemyManager.cs WavesManager.cs los cuales contienen una lista de los respectivos Enemy y Waves que hay en el juego.
-
-
-
-
-
 
 
 
