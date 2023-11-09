@@ -1,22 +1,22 @@
-# Exercise 6 - A Singleton manager to rule them all 
+# Exercise 06 - A Singleton manager to rule them all:
 
-Este ejercicio consiste en crear managers en la forma singleton para manejar diferentes aspectos del juego.
+Este ejercicio consiste en crear "managers" en la forma "singleton" para manejar diferentes aspectos del juego.
 En esta tarea vamos a manejar los enemigos y el piso.
 
-## Preparacion del terreno
+## Preparación del terreno
 
 Se crearon los tags para diferenciar los colliders del terreno
 
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/7c49f3b4-1716-4034-8165-95866bcaaa1e)
 
-Se importo el terreno ya hecho en clase, con el cambio que se le coloco una losa en el medio (previamente vacio). 
-Ademas de esto, el fondo fue editado para simular el espacio. 
+Se importo el terreno ya hecho en clase, con el cambio que se le colocó una losa en el medio (previamente vacio). 
+Además de esto, el fondo fue editado para simular el espacio. 
 
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/7ea841d2-8bf1-494b-a934-e83d1b25c9ec)
 
-Tambien se decidio importar el script del movimiento y el disparo del personaje realizadas para la tarea anterior. 
+También se decidió importar el script del movimiento y el disparo del personaje realizadas para la tarea anterior. 
 
-Ademas de este script, se hizo un script con deteccion de colisiones mas preciso. Esto es para evitar que el jugador se salga del escenario por atravesar las paredes. 
+Además de este script, se hizo un script con detección de colisiones más preciso. Esto es para evitar que el jugador se salga del escenario por atravesar las paredes. 
 
 ```
 bool IsWallInDirection(Vector3 direction){
@@ -31,11 +31,11 @@ bool IsWallInDirection(Vector3 direction){
 ## Managers
 ### a) Enemy Manager
 
-Enemy manager ya habia sido hacho durante el curso de varias clases. Es por esto que el EnemyManager, junto a Enemy simplemente fueron importados del proyecto que llevamos en clase.
+Enemy manager ya había sido hacho durante el curso de varias clases. Es por esto que el EnemyManager, junto a Enemy simplemente fueron importados del proyecto que llevamos en clase.
 
 ### b.1) Floor
 
-Tendremos un script llamado Floor que vamos a usar para nuestro FloorManager. Lo unico que necesitaos es una funcion que nos indique cual loseta remover de nuestro juego. 
+Tendremos un script llamado Floor que vamos a usar para nuestro FloorManager. Lo unico que necesitamos es una función que nos indique cual loseta remover de nuestro juego. 
 
 ```
 using System.Collections;
@@ -50,9 +50,9 @@ public class Floor : MonoBehaviour
 }
 ```
 
-### b.2) FLoor Manager 
+### b.2) Floor Manager 
 
-Para hacer el FloorManager, se copio el codigo ya hecho en Enemy y EnemyManager y se edito de acuerdo a lo necesario. 
+Para hacer el FloorManager, se copió el código ya hecho en Enemy y EnemyManager y se editó de acuerdo a lo necesario. 
 
 Es necesario mantener una lista que tenga los objetos que queremos remover. Es por esto que hacemos una lista con objetos tipo Floor. 
 
@@ -70,7 +70,7 @@ La lista tiene todas las losetas. Para inicializarla es necesario colocar todos 
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/73f00ee3-61ef-42b9-b69b-5a28f46c762a)
 
 
-Usamos el formato singleton para crear nuestro manejador. Nos aseguramos que solo tengamos uno de la siguiente manera
+Usamos el formato "singleton" para crear nuestro manejador. Nos aseguramos que solo tengamos uno de la siguiente manera:
 
 ```
     public static FloorManager instance;
@@ -86,7 +86,7 @@ Usamos el formato singleton para crear nuestro manejador. Nos aseguramos que sol
         }
 ```
 
-Luego de asegurarnos de tener un solo manager, el proposito de este va a ser remover losas (tiles) de manera aleatoria. 
+Luego de asegurarnos de tener un solo manager, el propósito de este va a ser remover losas (tiles) de manera aleatoria. 
 
 ```
 //remover la loseta previamente seleccionada 
@@ -108,7 +108,7 @@ Luego de asegurarnos de tener un solo manager, el proposito de este va a ser rem
     }
 ```
 
-### c) Remocion de losas
+### c) Remoción de losas
 
 Las losas solo son removidas una vez una bala le pega a una pared. Las paredes funcionan como triggers.
 
@@ -138,11 +138,11 @@ public class contacto : MonoBehaviour
 Este script le es colocado a nuestro prefab de la bala (bullet).
 
 
-### Como crear layers necesarios
+### ¿Cómo crear layers necesarios?
 
-Para que el script funcione, es necesario tener los layers adecudados. Esos layers no vienen por defecto, por lo que hay que annadirlos
+Para que el script funcione, es necesario tener los layers adecudados. Esos layers no vienen por defecto, por lo que hay que añadirlos
 
-Para annadirlos podemos hacer click en el objeto al que le queremos colocar un layer e ir al inspector.
+Para añadirlos podemos hacer click en el objeto al que le queremos colocar un "layer" e ir al inspector.
 
 ```
 Hacer click en layer > Hacer click en add layer > Colocarle Wall como nombre > Seleccionar el layer Wall para tu objeto
@@ -152,15 +152,15 @@ Hacer click en layer > Hacer click en add layer > Colocarle Wall como nombre > S
 
 Una vez tengamos el layer adecuado, podemos implementar nuestro script previamente mencionado.
 
-### Colliders y fisica
+### Colliders y física
 
-Para que este script corra correctamente tambien es necesario tener los colliders y la fisica necesaria.
+Para que este script corra correctamente también es necesario tener los "colliders" y la física necesaria.
 
-Para obtener el collider, simplemente seleccionamos nuestras paredes y les colocamos un box collider
+Para obtener el "collider", simplemente seleccionamos nuestras paredes y les colocamos un "box collider".
 
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/01bf91b7-acf9-4e76-9c2f-a6d9c247b190)
 
-La otra cosa necesaria es fisica en nuestra bala. Para colocarle fisica vamos al prefab de la bala y le colocamos un rigidbody. 
+La otra cosa necesaria es física en nuestra bala. Para colocarle física vamos al "prefab" de la bala y le colocamos un "rigidbody". 
 
 ```
 Es necesario seleccionar las opciones de Is Trigger y Freeze Position en Y
@@ -170,13 +170,13 @@ Es necesario seleccionar las opciones de Is Trigger y Freeze Position en Y
 
 ## Lluvia
 
-Para la lluvia se creo un prefab con un objeto esfera
+Para la lluvia se creó un prefab con un objeto esfera
 
 ```
 3D object > Object > Hacerlo un prefab
 ```
 
-Luego se creo un BallManager y se le annadiendo el sguiente script:
+Luego se creo un "BallManager" y se le añadió el sguiente script:
 
 ```
 using System.Collections;
@@ -203,13 +203,14 @@ public class Ball : MonoBehaviour
 }
 ```
 
-## Logica de Vida
-La vida es bastante simple, tenemos un valor que representa la cantidad de vida que va a tener el prefab con este script atado y un objeto que deja saber si se invoco un evento de parte. El update mantiene seguimiento el valor de vida, cuando este llegue a 0, el objeto de evento deja saber que se invoco un elemento y se destruye el prefab el cual tenía el script atado (Sea el enemigo o el jugador).
+## Lógica de Vida
+
+La vida es bastante simple, tenemos un valor que representa la cantidad de vida que va a tener el "prefab" con este "script" atado y un objeto que deja saber si se invocó un evento de parte. El "update" mantiene seguimiento el valor de vida, cuando este llegue a cero, el objeto de evento deja saber que se invocó un elemento y se destruye el "prefab" el cual tenía el "script" atado (Sea el enemigo o el jugador).
 
 Creamos dos scripst que utilizan "life", uno para quitarle vida a los enemigos y otro para quitarle puntos de vida al jugador.
-Tenemos el script creado en la clase para el enemigo recibir damage, el cual la bala coilisiona con el y le quita una cantidad fija de vida, solo faltaba la del jugador.
+Tenemos el script creado en la clase para el enemigo recibir "damage", el cual la bala coilisiona con el y le quita una cantidad fija de vida, solo faltaba la del jugador.
 
-Tenemos otro script para la plataforma que va a estar debajo del piso, el cual qualquier cosa que coilisione con ella y tenga atado el script de "life.cs", su valor de vida se reducira a 0. Cuando el jugador se caiga por las lozetas que se van desapareciendo, el jugador se elimina instantaneamente.
+Tenemos otro script para la plataforma que va a estar debajo del piso, el cual qualquier cosa que coilisione con ella y tenga atado el script de "life.cs", su valor de vida se reducira a cero. Cuando el jugador se caiga por las lozetas que se van desapareciendo, el jugador se eliminará instantaneamente.
 
 
 ![DeathPlatform](https://github.com/nekotletta/ccom4995/assets/99048617/f0c8b169-47e8-4805-8745-56d1a927ea03)
@@ -217,13 +218,13 @@ Tenemos otro script para la plataforma que va a estar debajo del piso, el cual q
 
 ## Coilisiones Implementadas para el juego
 
-Utilizamos tags para determinar el tipo de objeto con el que este estaba coilisionando el objeto con el script. Los que van a causar cambios pricipales van a ser la gotas de la lluvia igual que la baja del jugador.
+Utilizamos tags para determinar el tipo de objeto con el que este estaba coilisionando el objeto con el "script". Los que van a causar cambios pricipales van a ser la gotas de la lluvia igual que la baja del jugador.
 
-La bala contiene un script llamado contacto.cs, el cual basado en el tag del objeto que coilisiono hace se comporta differente mente. Se distribuyen entre 3 tags principales:
+La bala contiene un script llamado "contacto.cs", el cual basado en el "tag" del objeto que coilisiono hace se comporta differente mente. Se distribuyen entre tres "tags" principales:
 
 ### "Enemy"
 
-Si es un enemy, la bala se destruye y le quita vida del script Life.cs basado en la variable de damage.
+Si es un "enemy", la bala se destruye y le quita vida del "script Life.cs" basado en la variable de "damage".
 
 
 ![ShootingEnemy](https://github.com/nekotletta/ccom4995/assets/99048617/933599ac-43f0-4c8e-8363-ef9674b4cf03)
@@ -231,7 +232,7 @@ Si es un enemy, la bala se destruye y le quita vida del script Life.cs basado en
  
 ### "Wall"
 
-Invoca una funcion de floor.cs el cual elimina una lozeta del piso al azar.
+Invoca una funcion de "floor.cs" el cual elimina una lozeta del piso al azar.
 
 
 ![TileDestroy](https://github.com/nekotletta/ccom4995/assets/99048617/ec989038-fcb9-4330-b2f9-55c8bb6e9a0c)
@@ -245,19 +246,19 @@ Destruye el piso completo.
 ![FloorDestroy](https://github.com/nekotletta/ccom4995/assets/99048617/27849ed1-5afc-45c3-b950-fc3566a63851)
 
     
-Si es qualquier otra cosa se destruye la bala sin ningun otro efecto, esto permite que las gotas que caigan en el sielo no destruyan las balas.
+Si es cualquier otra cosa se destruye la bala sin ningún otro efecto, esto permite que la gota no destruya los objetos cuyos tags sean: "Enemy", "Wall", "Corner".
 			
-Hablando de, las gotas tendran su propio script de contacto, en el cual reacciona differente basado al tag del game object con el que coalisiona:
+Hablando de, las gotas tendran su propio "script" de contacto, en el cual reacciona differente basado al "tag" del "game object" con el que coalisiona:
 
 ### "Enemy"
 
-se destruye la gota
+Se destruye la gota:
 
 
 ![GotaEnemy](https://github.com/nekotletta/ccom4995/assets/99048617/cd8f773b-387b-478f-bbec-a6f9302999a4)
 
 
-### "ThePlayer" = si hace contacto con el jugador, la gota se destruye y le quita vida del script Life.cs basado en la variable de damage.
+### "ThePlayer" = si hace contacto con el jugador, la gota se destruye y le quita vida del "script Life.c"s basado en la variable de "damage".
 
 
 ![GotaPlayer](https://github.com/nekotletta/ccom4995/assets/99048617/7de1418e-386b-4df7-a3d2-dd3fb0711a6a)
@@ -265,15 +266,15 @@ se destruye la gota
 
 ## Condición Ganar y Perder
 
-1. Creamos un objeto vacío llamado GameMode, en el cual vamos a poner el cript que contiene nuestras condiciones para ganar.
-2. Crea 2 nuevas escenas, una para representar que ganaste y otra que se invoque cuando pierdas, las llamaremos "WinScreen" y "LooseScreen" respectivamente.
-3. Dentro del objeto Gamemode, creamos un script llamado wavesGameMode
-4. Dentro del script creamos una objeto tipo "Life" el cual representara el prefab que estamos controlando.
-5. Estre script mantendra dos funciones que monitorean cada evento que ocurre en el juego, en este caso si matan a un enemigo se       invoca una funcion que chequea si la criteria de ganar se a alcanzado (si eliminas todos los enemigos) y otra funcion si la         vida del objeto Life llega a 0.
-6. En las funciones de ganar y perder vamos a utilizar el manejador de escenas para invocar la respectiva escena basada en si          ganamos o perdimos. En la función de perder invocamos a la escena "LoseScreen" y en la funcion de ganar invocamos la escena         "WinScreen".
-7. Las Escenas son registradas en el build settings para que unity sepa donde buscarlas.
+1. Creamos un objeto vacío llamado "GameMode", en el cual vamos a poner el "script" que contiene nuestras condiciones para ganar.
+2. Crea dos nuevas escenas, una para representar que ganaste y otra que se invoque cuando pierdas, las llamaremos "WinScreen" y "LooseScreen" respectivamente.
+3. Dentro del objeto "Gamemode", creamos un "script" llamado "wavesGameMode".
+4. Dentro del "script" creamos una objeto tipo "Life" el cual representara el prefab que estamos controlando.
+5. Estre "script" mantendrá dos funciones que monitorean cada evento que ocurre en el juego, en este caso si matan a un enemigo se invoca una función que revisa si el criterio de ganar se ha alcanzado (si  se eliminan todos los enemigos) y otra función si la vida del objeto "Life" llega a cero.
+6. En las funciones de ganar y perder vamos a utilizar el manejador de escenas para invocar la respectiva escena basada en si se gana o se pierde. En la función de perder invocamos a la escena "LoseScreen" y en la función de ganar invocamos la escena "WinScreen".
+7. Las Escenas son registradas en el "build settings" para que Unity sepa donde buscarlas.
 
-### Condicion de Ganar
+### Condición de Ganar
 
 
 ![Win](https://github.com/nekotletta/ccom4995/assets/99048617/fdc55ef5-21e5-4141-9deb-f7bd45f65758)
@@ -285,7 +286,7 @@ se destruye la gota
 ![Lose](https://github.com/nekotletta/ccom4995/assets/99048617/ccc9fcf5-c801-4bfe-ba39-444c76c873ab)
 
 
-El script de WavesGameMode.cs chequea que todos los waves hallan terminado de invocar enemigos igualmente que todos los enemigos hallan sido eliminados para demonstrar la escena de que ganastes. Esto se mantiene en track con en EnemyManager.cs WavesManager.cs los cuales contienen una lista de los respectivos Enemy y Waves que hay en el juego.
+El "script" de" WavesGameMode.cs" revisa que todos los "waves" hayan terminado de invocar enemigos igualmente que todos los enemigos hayan sido eliminados para demostrar la escena de que ganastes. Esto se mantiene en "track" con en "EnemyManager.cs" y "WavesManager.cs" los cuales contienen una lista de los respectivos "Enemy" y "Waves" que hay en el juego.
 
 
 
