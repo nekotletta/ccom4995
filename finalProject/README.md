@@ -33,12 +33,15 @@ Aumenta la velocidad del jugadorpor unos segundos para poder pasarle a tus opone
 Como todos sabemos, los honeybuns ponen lento a una persona. En este caso el jugador emite tres honeybuns en la parte de atras para los oponentes correr sobre ellos y paralizarlos temporeramente. Aún hay que tener cuidado, ya que si el jugador corre sobre estos mismos va a perder la velocidad temporeramente. 
 
 Jugador activando poder
+
 ![image](img/Drop.gif)
 
 Jugador recibiendo effectos del honeybun
+
 ![image](img/SlowDownPlayer.gif)
 
 Enemigo recibiendo effectos del honeybun
+
 `<Colocar aqui gif de enemigo comer honeybun>`
 
 ### Bricks
