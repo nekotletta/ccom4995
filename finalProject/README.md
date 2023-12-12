@@ -101,6 +101,8 @@ Empezamos haciendo algunas pruebas en un archivo de Unity diferente antes de imp
 
 ### Pruebas de IA iniciales:
 
+Las siguientes explicaciones sobre estas pruebas se aplican al proyecto. Fueron creadas a pequena escala para poder visualizarlas mejor. 
+
 Se creo un proyecto nuevo en Uniy especificamente para crear y probar el IA. Para esto se siguieron los siguientes pasos:
 
 Paso 1: Terreno basico para probar la IA:
