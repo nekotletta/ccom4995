@@ -190,7 +190,6 @@ public class NPCController : MonoBehaviour
 
 ### Modelo Maxwell 
 
-Modelo de gato, importado de scketchfab, hecho por: bean(alwayshasbean)
 Se utilizo un modelo de un gato, conocido como Maxwell online. Este modelo fue importado de sketchfab, hacho por bean(alwayshasbean)
 
 ![modelo maxwell](https://github.com/nekotletta/ccom4995/assets/99048617/ca75d013-8031-4b70-ad8b-5c42e7ec83ea)
