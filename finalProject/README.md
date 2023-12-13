@@ -46,7 +46,7 @@ Jugador recibiendo effectos del honeybun:
 
 El jugador dispara vareos ladrillos proyectiles, si un ladrillo le da a un enemigo, lo va a paralizar por un momento.
 
-![image](img/Shoot.png)
+![image](img/Shoot.gif)
 
 ### Logica de Powerups
 
