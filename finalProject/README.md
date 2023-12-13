@@ -42,15 +42,11 @@ Jugador recibiendo effectos del honeybun:
 
 ![image](img/SlowDownPlayer.gif)
 
-Enemigo recibiendo effectos del honeybun:
-
-`<Colocar aqui gif de enemigo comer honeybun>`
-
 ### Bricks
 
 El jugador dispara vareos ladrillos proyectiles, si un ladrillo le da a un enemigo, lo va a paralizar por un momento.
 
-`<Colocar aqui gif de jugador disparando a carro>`
+![image](img/Shoot.png)
 
 ### Logica de Powerups
 
