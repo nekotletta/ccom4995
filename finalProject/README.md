@@ -199,30 +199,34 @@ Se utilizo un modelo de un gato, conocido como Maxwell online. Este modelo fue i
 
 Para el uso de las calles y el mapeado de la pista, se utilizó el siguiente paquete de texturas asset store
 
+https://assetstore.unity.com/packages/3d/environments/urban/low-poly-street-pack-67475
+
 ![asset](https://github.com/nekotletta/ccom4995/assets/99048617/567e76c3-1d6e-49e7-87ec-4e8f3de1f45b)
 
   
-Se creo un terreno para nuestra pista. Luego, usando las texturas y objetos provistas en el paquete se construyo una pista circular.
+Se creo un terreno para nuestra pista. Luego, usando las texturas y objetos provistas en el paquete se construyó una pista circular.
 
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/ea93124b-2cad-4a30-961f-895f65f3ffc9)
 
 
-Con otros objetos se le anadieron algunos detalles para crear ambientacion en la pista. 
+Con otros objetos se le añadieron algunos detalles para crear ambientación en la pista. 
 
 ![ambiente](https://github.com/nekotletta/ccom4995/assets/99048617/25274984-12f5-4514-80ce-e233764c4133)
 
-Se anadio el agua y la cascada para el entorno:
+Se añadió el agua y la cascada realizadas en clase para el entorno:
 
 ![awa](https://github.com/nekotletta/ccom4995/assets/99048617/13d8448d-8fa6-4dcf-8105-dcb056092088)
 
 
 ## Carro 
 
-Al momento de crear la fisica del carro, se uso este paquete de referencia: 
+Para crear la fisica del carro, se utilizaron los scripts CarController y BodyTilt asociadas al unity asset siguiente:
+
+https://assetstore.unity.com/packages/templates/systems/arcade-car-controller-lite-version-145489
 
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/7836a44d-ac8d-4a15-ba92-4982978c7eaf)
 
-Se decidio anadirle humo al carro
+Se decidió añadirle un efecto de humo al carro
 
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/05f2bb3a-3ee3-444c-ab3e-8fea0bc65ec6)
 
