@@ -2,6 +2,7 @@
 
 El último proyecto de este curso consiste en crear un videojuego utilizando los conceptos que hemos aprendido en la clase. En esta documentación se encontrará el aspecto técnico y lo que contiene el juego.
 
+Link al zip file: http://aeryserver.ddns.net:5000/sharing/niOIy1pe3
 
 ## Item System
 
