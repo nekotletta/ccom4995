@@ -28,11 +28,45 @@ Los siguientes powerups le puede salir al jugador dentro del Item Box.
 
 Aumenta la velocidad del jugador por unos segundos para poder pasarle a sus oponentes satisfactoriamente.
 
+```
+public IEnumerator Boost(){
+        CarController player = gameObject.GetComponent<CarController>();
+        if(player != null){
+            player.MaxRPM *= 3; // Triplicate the player's max and minimum speed
+            player.MinRPM *= 3;
+            cameraFov.fieldOfView += 30; // Adjust the camera so that it goes further back when boosting
+            boostEffect.Play(); // Add the booster effect
+            audioEffect.clip = useBoostSound; //Add sound effects assosciated with the effect
+            audioEffect.Play();
+            yield return new WaitForSeconds(3);
+            boostEffect.Stop();
+            // Reset modified parameters back to default after 3 seconds
+            cameraFov.fieldOfView -= 30;
+            player.MaxRPM /= 3;
+            player.MinRPM /= 3;
+        }
+        yield return new WaitForSeconds(0);
+    }
+```
+
 ![image](img/Boost.gif)
 
 ### HoneyBun
 
 Como todos sabemos, los honeybuns ponen lento a una persona. En este caso el jugador emite tres honeybuns en la parte de atrás para los oponentes correr sobre ellos y paralizarlos temporalmente. Aún hay que tener cuidado, ya que si el jugador corre sobre estos mismos va a perder la velocidad. 
+
+```
+public IEnumerator Bomb(){
+        audioEffect.clip = dropBombSound;
+        for(int i=0; i < 3; i++){
+            audioEffect.Play();
+            GameObject clone = Instantiate(drop);
+            clone.transform.position = dropPoint.transform.position;
+            clone.transform.rotation = dropPoint.transform.rotation;
+            yield return new WaitForSeconds(1);
+        }
+    }
+```
 
 Jugador activando poder:
 
@@ -45,6 +79,21 @@ Jugador recibiendo effectos del honeybun:
 ### Bricks
 
 El jugador dispara vareos ladrillos proyectiles, si un ladrillo le da a un enemigo, lo va a paralizar por un momento.
+
+```
+public IEnumerator Bullet(){
+        audioEffect.clip = shootSound;
+        for(int i=0; i < 6; i++){
+            audioEffect.Play();
+            // bulletEffect.Play
+            // Shooting bullets
+            GameObject clone = Instantiate(bullet);
+            clone.transform.position = bulletPoint.transform.position;
+            clone.transform.rotation = bulletPoint.transform.rotation;
+            yield return new WaitForSeconds(1);
+        }
+    }
+```
 
 ![image](img/Shoot.gif)
 
