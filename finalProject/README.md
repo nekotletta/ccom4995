@@ -186,6 +186,26 @@ public class NPCController : MonoBehaviour
 }
 ```
 
+Adicional a eso, para hacer el juego más entretenido, se implementó una funcion para cambiar la velocidad dinámicamente cada 5 segundos
+
+```
+private IEnumerator ChangeSpeedPeriodically()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(5f); // Espera 5 segundos
+
+            currentSpeed = GetRandomSpeed(); // Asigna una nueva velocidad aleatoria al NPC
+        }
+    }
+
+    // Función para obtener una velocidad aleatoria dentro del rango especificado
+    private float GetRandomSpeed()
+    {
+        return Random.Range(minSpeed, maxSpeed);
+    }
+```
+
 ## Personajes | Visuales del juego
 
 ### Modelo Maxwell 
@@ -204,7 +224,7 @@ https://assetstore.unity.com/packages/3d/environments/urban/low-poly-street-pack
 ![asset](https://github.com/nekotletta/ccom4995/assets/99048617/567e76c3-1d6e-49e7-87ec-4e8f3de1f45b)
 
   
-Se creo un terreno para nuestra pista. Luego, usando las texturas y objetos provistas en el paquete se construyó una pista circular.
+Se creó un terreno para nuestra pista. Luego, usando las texturas y objetos provistas en el paquete se construyó una pista circular.
 
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/ea93124b-2cad-4a30-961f-895f65f3ffc9)
 
