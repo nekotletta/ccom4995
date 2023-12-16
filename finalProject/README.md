@@ -7,6 +7,8 @@ La descripción de cómo se incorporaron lo aprendido en clase se encuentra al f
 Link al zip file: http://aeryserver.ddns.net:5000/sharing/niOIy1pe3
 
 
+![image](https://github.com/nekotletta/ccom4995/assets/99048617/dfc2a496-b44c-4229-8db6-17c55604692e)
+
 ## Item System
 
 El Item Box es un sistema similar a los que muchos conocemos, un jugador hace contacto con la caja y se ejecuta una ruleta para ver cuál poder le tocó al jugador y utilizarlo para tomar ventaja y ganar la carrera.
