@@ -2,7 +2,10 @@
 
 El último proyecto de este curso consiste en crear un videojuego utilizando los conceptos que hemos aprendido en la clase. En esta documentación se encontrará el aspecto técnico y lo que contiene el juego.
 
+La descripción de cómo se incorporaron lo aprendido en clase se encuentra al final de la documentación.
+
 Link al zip file: http://aeryserver.ddns.net:5000/sharing/niOIy1pe3
+
 
 ## Item System
 
@@ -213,14 +216,16 @@ private IEnumerator ChangeSpeedPeriodically()
 
 Se utilizo un modelo de un gato, conocido como Maxwell online. Este modelo fue importado de sketchfab, hacho por bean(alwayshasbean)
 
+Fuente: https://sketchfab.com/3d-models/maxwell-the-cat-dingus-2ca7f3c1957847d6a145fc35de9046b0
+
 ![modelo maxwell](https://github.com/nekotletta/ccom4995/assets/99048617/ca75d013-8031-4b70-ad8b-5c42e7ec83ea)
 
 
-### Modelo de autos y carreteras
+### Modelo de carreteras
 
 Para el uso de las calles y el mapeado de la pista, se utilizó el siguiente paquete de texturas asset store
 
-https://assetstore.unity.com/packages/3d/environments/urban/low-poly-street-pack-67475
+Fuente: https://assetstore.unity.com/packages/3d/environments/urban/low-poly-street-pack-67475
 
 ![asset](https://github.com/nekotletta/ccom4995/assets/99048617/567e76c3-1d6e-49e7-87ec-4e8f3de1f45b)
 
@@ -239,11 +244,13 @@ Se añadió el agua y la cascada realizadas en clase para el entorno:
 ![awa](https://github.com/nekotletta/ccom4995/assets/99048617/13d8448d-8fa6-4dcf-8105-dcb056092088)
 
 
-## Carro 
+### Modelos de carros 
 
-Para crear la fisica del carro, se utilizaron los scripts CarController y BodyTilt asociadas al unity asset siguiente:
+Para los modelos de los carros se utilizo el siguiente unity asset pack:
 
-https://assetstore.unity.com/packages/templates/systems/arcade-car-controller-lite-version-145489
+Para crear la fisica del carro, se utilizaron los scripts CarController y BodyTilt asociadas al mismo asset.
+
+Fuente: https://assetstore.unity.com/packages/templates/systems/arcade-car-controller-lite-version-145489
 
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/7836a44d-ac8d-4a15-ba92-4982978c7eaf)
 
@@ -290,4 +297,35 @@ Se colocaron las diferentes cajas de recompensa:
 ![image](https://github.com/nekotletta/ccom4995/assets/99048617/50a44f77-b5ac-439b-b6c4-e36b6ad9ec63)
 
 
+# Showcase | Game demo
 
+Link: https://www.youtube.com/watch?v=CZSc6dscfac
+
+
+# Distribucion de temas incorporaron en el proyecto
+
+	a) Manipulación de Primitivos y Compuestos - Ese tema fue aplicado en la creación de los power ups en nuestro juego.
+ 
+ 	b) Jerarquías, clonaciones y prefabricados
+  
+  		- Jerarquias - Este tema se ve en que los assets estan divididos en subgrupos (aquellos peretencientes a la carretera, el ambiente alrededor, y los corredores).
+      
+      		- Prefabricados - Casi todos los assets de este proyectos fueron importados, lo cual quiere decir que vinieron como prefabs.
+	
+	c) Colliders - La pista tiene colliders a su alrededor.
+ 
+ 	d) Elaboración de escenarios con mapas y brochas - Se le anadió un terreno al juego.
+  
+  	e) Texturas 3 - Todo objeto en el juego tiene una textura.
+   
+   	f) Programación por eventos - El sistema de power-ups está atado a condiciones. También esta la condición de ganar. 
+    
+	g) Spawnning - N/A
+ 
+ 	h) Física de los objetos - La física de los carros
+
+	i) Edición de materiales – Iluminación - N/A
+
+ 	j) Efectos visuales con sistemas de partículas - Tanto el efecto de humo de los carros como la cascada en el mapa usan partículas.
+
+  	k) Animación - N/A
